@@ -80,7 +80,10 @@ void TestApp::OnPreRender()
     ImGui::NewFrame();
 
     {
+        const ImGuiViewport* viewport = ImGui::GetMainViewport();
+        ImGuiID dockspace = ImGui::DockSpaceOverViewport(viewport);
 
+        // . . .
     }
 
     ImGui::Render();
